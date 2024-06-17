@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<!-- create.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a blog of your own</title>
+    <link rel="stylesheet" href="styles/create.css">
+</head>
+<body>
+    <div class="create-section">
+        <div class="create-container">
+          <h2 class="create-title">Write a Blog on a Movie</h2>
+          <form class="create-form" action="/create" method="POST">
+            <div class="form-group">
+              <label for="title" class="form-label">Movie Title:</label>
+              <input type="text" id="title" name="title" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="content" class="form-label">Blog Content:</label>
+              <textarea id="content" name="content" class="form-textarea" rows="8" required></textarea>
+            </div>
+            <button type="submit" class="create-button">Publish</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
